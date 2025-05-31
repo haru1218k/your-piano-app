@@ -1,0 +1,55 @@
+
+[Ll]ibrary/
+#unityが内部で使うキャッシュフォルダで、他人の環境で再構築可能だから無視OK
+[Tt]emp/
+#unityの一時ファイルだよ。セッション中だけ使われるから無視OK
+[Oo]bj/
+#.Netコンパイル時に出る中間ファイル
+[Bb]uild/
+[Bb]uilds/
+[Bb]in/
+#出力した実行ファイルとか
+
+*.user
+*.userprefs
+#個人設定ファイル。他人の環境で使えないから無視
+*.csproj
+*.sln
+#unityが自動生成するC#プロジェクト関連ファイル。
+*.pidb
+#古いMonoベースのIDE用のデバッグ情報。
+*.suo
+#visual studioの個人設定ファイル。絶対に共有しない
+*.swp
+#vimなどのエディタでできる一時ファイルだよ
+
+.DS_Store
+#macOSで作られるフォルダ設定ファイル。
+Thumbs.db
+#windowsが自動生成するサムネイルキャッシュ。
+
+*.unityproj
+*.booproj
+#現在のunityでは使わない
+
+*.tmproj
+#text meshエディタ用
+
+.idea/
+#	JetBrains Rider のプロジェクト設定。個人ごとに違うので追跡しない。
+.vscode/
+#	VSCodeのプロジェクト設定。基本は無視でOK。
+*.code-workspace
+#	ワークスペース設定ファイル。複数人で統一する場合以外は追跡不要。
+
+sysinfo.txt
+#Unityのシステム情報出力。トラブル時には有用だけど通常は追跡不要。
+*.log
+#ビルドや実行ログ。開発中に自動で増えるだけなので追跡不要。
+
+
+
+.crashlytics/
+#Firebase Crashlyticsを使ってるとできる。個人で使ってる場合は無視しておこう。
+.cloud/
+#	Unity Cloudのバックアップなどがここに入ることも。これもプロジェクトに含めない。
